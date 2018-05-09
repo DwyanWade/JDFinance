@@ -2,7 +2,7 @@
   <Panel title="导航条" :class="$style.panel">
     <ul :class="$style.content">
       <li v-for="(item,index) in navLists">
-        <router-link :to="{ name: item.path }" tag="div">
+        <router-link :to="{ name: item.path }">
           <img :src="item.img">
           <p>{{item.title}}</p>
         </router-link>
@@ -70,9 +70,9 @@ export default {
       justify-content: space-around;
       li{
         text-align: center;
-        // a{
-        //   text-decoration: none;
-        // }
+        a{
+          text-decoration: none;
+        }
         img{
           height: 44px;
           width: 44px;
@@ -84,12 +84,8 @@ export default {
           font-size: 22px;
         }
         .router-link-active {
-            color: #ff0000;
-            font-size: 22px;
-            background-color: #ff0000;
-        }
-        .router-link-exact-active {
-          background-color: #ff0000;
+              color: #ff0000;
+              font-size: 22px;
         }
       }
     }
