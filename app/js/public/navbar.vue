@@ -19,7 +19,6 @@ export default {
   },
   data(){
     return{
-      isSelect: 0,
       navLists: [
         {
           title: '首页',
@@ -84,8 +83,8 @@ export default {
           font-size: 22px;
         }
         .router-link-active {
-              color: #ff0000;
-              font-size: 22px;
+          color: #ff0000;
+          font-size: 22px;
         }
       }
     }
